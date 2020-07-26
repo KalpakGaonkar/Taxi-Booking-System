@@ -1,5 +1,5 @@
 # Taxi-Booking-System
-A website for booking taxi rides using PHP-myAdmin as backend and HTML, CSS and bootstrap as frontend.
+A website for booking taxi rides using PHP-myAdmin as backend and HTML, CSS and JS as frontend.
 
 <h1>Home Page</h1>
 
