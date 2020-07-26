@@ -1,0 +1,150 @@
+body{
+	min-height:100vh;
+	background: url(bg.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+
+}
+
+body, html{
+	position:relative;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+.heading{
+	background-color: black;
+	position: relative;
+	z-index: 4;
+	display: flex;
+	font-family: verdana;
+	font-size: 20px;
+	width: 100%;
+	height: 50px;
+	text-decoration: none;
+	border-top: none;
+}
+
+.left-header{
+	position: relative;
+	text-align: center;
+	width: 20%;
+	padding: 2px;
+	padding-left: 20px;
+	font-size: 30px;
+}
+
+.middle-header{
+	position: relative;
+	text-align: left;
+	width: 50%;
+	padding: 2px;
+	padding-left: 0px;
+	padding-top: 10px;
+}
+
+.right-header{
+	position: relative;
+	text-align: center;
+	width: 30%;
+	padding: 2px;	
+	padding-left: 100px;
+	padding-top: 10px;
+}
+
+.header-anchor{	
+	text-decoration: none;
+	font-family: verdana;	
+	color: white;	
+	padding-left:15px;
+}
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 0px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.type_choose{
+	background-color: green;
+	border: none;
+	border-radius: 8px;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.align_container{
+	text-align: center;
+	height: 60%;
+	position: absolute;
+	width: 60%;
+	left: 20%;
+	top: 10%;
+}
+
+.container{
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	border-radius: 20px;
+	vertical-align: middle;
+	border: 1px solid black;
+	background-color: white;
+}
+
+.choose_ride{
+	float: center;
+	text-align: center;
+	font-size: 15px;
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+.display_table{
+	padding: 10px;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+.put_border{
+	border: 1px solid black;
+	border-collapse: collapse;
+}

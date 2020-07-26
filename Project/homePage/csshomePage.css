@@ -1,0 +1,390 @@
+body{
+	min-height:100vh;
+}
+
+body, html{
+	position:relative;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+.heading{
+	background-color: black;
+	position: relative;
+	z-index: 4;
+	display: flex;
+	font-family: verdana;
+	font-size: 20px;
+	width: 100%;
+	height: 50px;
+	text-decoration: none;
+	border-top: none;
+}
+
+.left-header{
+	position: relative;
+	text-align: center;
+	width: 20%;
+	padding: 2px;
+	padding-left: 20px;
+	font-size: 30px;
+}
+
+.middle-header{
+	position: relative;
+	text-align: left;
+	width: 50%;
+	padding: 2px;
+	padding-left: 0px;
+	padding-top: 10px;
+}
+
+.right-header{
+	position: relative;
+	text-align: center;
+	width: 30%;
+	padding: 2px;	
+	padding-left: 100px;
+	padding-top: 10px;
+}
+
+
+.header-anchor{	
+	text-decoration: none;
+	font-family: verdana;	
+	color: white;	
+	padding-left:15px;
+}
+
+.header{
+	position: relative;	
+	height: 500px;
+	width: 120%;
+	left: -5%;
+	overflow: hidden;
+	transform: rotateZ(-4deg);
+	margin-left: -40px;
+	margin-top: -60px;
+	background-color: white;
+}
+
+.mySlides {
+	display: none;
+}
+
+.cab3-img{
+	width: 150%;
+	height: auto;
+	position: absolute;
+	opacity: 1;
+	z-index: 0;
+	transform: rotateZ(4deg);
+}
+
+
+.overlap{
+	width: 96%;
+	height: 50%;
+	margin-top: 300px;
+	position: relative;
+	z-index: 2;
+	transform: rotateZ(4deg);
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.header-title, .header-subtitle {
+	color: white;
+	text-shadow: 2px 2px black;
+	text-shadow: 2px 2px black;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+    font-size: 42px;
+}
+
+.header-title {
+	margin-top: 200px;
+}
+
+.button{
+	top: 50%;
+	left: 50%;	
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	background: #269300;
+    border-radius: .8rem;	
+	display: block;
+    padding: 1rem;
+    margin: 0 auto;
+	font-size: 17px;
+	cursor: pointer;
+    width: 10rem;
+	transform: translateZ(.1px);
+	z-index: 10;
+	margin-left: 580px;
+	margin-top: -20px;
+	animation: pulse1 2s 3s ease-out infinite;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+#myBtn {
+	display: none;/*initially no button*/
+	position: fixed; /* Fixed/sticky position */
+	bottom: 20px; /* Place the button at the bottom of the page */
+	right: 30px; /* Place the button 30px from the right */
+	z-index: 99; /* Make sure it does not overlap */
+	border: none; /* Remove borders */
+	outline: none; /* Remove outline */
+	background-color: red; /* Set a background color */
+	color: white; /* Text color */
+	cursor: pointer; /* Add a mouse pointer on hover */
+	padding: 15px; /* Some padding */
+	border-radius: 10px; /* Rounded corners */
+	font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+.more{
+	text-align:center;
+	width: 100%;
+	top:530px;
+	position: absolute;
+	z-index:10;
+}
+
+.video-text {
+	position: absolute;
+	top: 850px;
+	left:370px;
+	z-index: 100;
+	color: white;
+	font-family: verdana;
+}
+	
+.header-down-arrow {
+	animation: pulse2 2s 3s ease-out infinite;
+    top: 580px;
+    left: 0;
+	position: absolute;
+    right: 0;
+	text-align: center;
+	z-index: 10;
+}
+
+.header-down-arrow img {
+    animation: 1s ease-in forwards;
+}
+
+.login-box{
+    width: 320px;
+    height: 420px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+.modal {
+	display:none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.login-box p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.login-box input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.login-box input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.login-box input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #1c8adb;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.login-box input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #39dc79;
+    color: #000;
+}
+
+.login-box a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+}
+.login-box a:hover
+{
+    color: #39dc79;
+}
+
+.login-box2{
+    width: 320px;
+    height: 610px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    top: 52%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 0px 30px;
+}
+.avatar2{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -40px;
+    left: calc(50% + 50px);
+}
+.modal2 {
+	display:none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+	top: 0;
+	overflow: hidden;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+#Signup{
+	margin-left: -50px;
+}
+
+.login-box2 p{
+    width: 100%;
+    margin:0;
+    padding: 0;
+    font-weight: bold;
+}
+.login-box2 input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.login-box2 input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.login-box2 input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #1c8adb;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.login-box2 input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #39dc79;
+    color: #000;
+}
+
+#first, #last {
+    width: 45%;
+}
+
+#last {
+    position: relative;
+    padding-left: 10%;
+    right: 0px;
+}
+
+.login-box2 a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+}
+.login-box2 a:hover
+{
+    color: #39dc79;
+}
+
+@keyframes pulse1 {
+  0% {
+    transform: none;
+  }
+  50% {
+	transform: scale(.9);
+  }
+  100% {
+	transform: none;
+  }
+}
+
+@keyframes pulse2 {
+  0% {
+	opacity: 1;
+    transform: none;
+  }
+  50% {
+    opacity: .8;
+	transform: scale(.8);
+  }
+  100% {
+    opacity: 1;
+	transform: none;
+  }
+}
